@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Restaurant } from './restaurant.model';
 
 @Component ({
@@ -7,22 +7,13 @@ import { Restaurant } from './restaurant.model';
   <div class="well currentRestaurant">
     <h4 class="restaurant">{{ restaurant.name }} <span>- {{ restaurant.specialty }}</span></h4>
     <p>{{ restaurant.address }}</p>
-    <p>Pirce estimate: {{ restaurant.price }}</p>
-    <button class="btn">add a review</button>
-  <!--  <button (click)="seeReviews()" class="btn">see reviews</button> -->
+    <p>Price estimate: {{ restaurant.price }}</p>
 
-    <new-review
-      (newReviewSender)="addReview($event)">
-    </new-review>
+    <button (click)="addReview()"class="btn">add a review</button>
   </div>
-
-
   `
 })
 export class RestaurantComponent {
   @Input() restaurant: Restaurant;
-  selectedRestaurant: Restaurant = null
-  addReview(clickedRestaurant: Restaurant, ) {
-    this.clickedRestaurant.review.push(newReview);
-  }
+
 }

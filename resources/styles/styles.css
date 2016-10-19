@@ -42,3 +42,7 @@ h4.restaurant span {
   font-style: italic;
   font-weight: lighter;
 }
+
+.reviewForm{
+  width: 30%;
+}

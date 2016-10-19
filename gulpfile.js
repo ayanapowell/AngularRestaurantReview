@@ -29,7 +29,6 @@ var shell = require('gulp-shell');
 // sass dependencies.
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-
 ////////////////////// TYPESCRIPT //////////////////////
 // clean task
 gulp.task('tsClean', function(){
