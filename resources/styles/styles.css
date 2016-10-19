@@ -1,0 +1,44 @@
+body {
+  font-family: monospace;
+}
+
+p {
+  font-color: #595959;
+}
+
+h4 {
+  font-weight: bolder;
+}
+
+.currentRestaurant .btn {
+  margin-top: 10px;
+  border: none;
+  background: transparent;
+  color: #2d5986;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+h1.title {
+  color: #ff8566;
+  border-bottom: 2px solid #bfbfbf;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.title span {
+  font-size: 18px;
+  font-style: italic;
+}
+
+h4.restaurant span {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: lighter;
+}
