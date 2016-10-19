@@ -46,3 +46,17 @@ h4.restaurant span {
 .reviewForm{
   width: 30%;
 }
+
+.reviews {
+  font-style: italic;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.reviewTitle {
+  border-bottom: 1px solid #bfbfbf;
+  padding-top: 20px;
+  font-size: 16px;
+  width: 90%;
+  color: #ff8566;
+}

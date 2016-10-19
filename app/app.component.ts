@@ -12,16 +12,20 @@ import { Review } from './review.model';
           [childRestaurantList]="masterRestaurantList"
           (addReviewSender)="addReview($event)" class="col-sm-6">
         </restaurant-list>
+
         <div class="col-sm-6">
-          <h4>Leave a review!</h4>
-          <new-review></new-review>
+          <div class="row">
+            <div class="col-sm-12">
+              <h4>Leave a review!</h4>
+              <new-review></new-review>
+            </div>
+
+          <div class="col-sm-12">
+            <new-restaurant
+              (newRestaurantSender)="addRestaurant($event)">
+            </new-restaurant>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <new-restaurant
-          (newRestaurantSender)="addRestaurant($event)"
-          class="col-sm-12">
-        </new-restaurant>
       </div>
     </div>
   `
