@@ -1,4 +1,4 @@
-# Angular Epicodus Project
+# Restaurant Review
 
 #### _October 17, 2017_
 
